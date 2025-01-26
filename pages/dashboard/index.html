@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#" class="logo">
+            <i class='bx bx-code-alt'></i>
+            <div class="logo-name"><span>Lorem</span>Ipsum</div>
+        </a>
+        <ul class="side-menu">
+            <li class="active"><a href="index.html"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
+            <li><a href="pages/guru/guru.html"><i class='bx bxs-user-rectangle'></i></i>Guru</a></li>
+            <li><a href="pages/murid/murid.html"><i class='bx bx-group'></i>Murid</a></li>
+            <li><a href="pages/nilai/nilai.html"><i class='bx bx-candles'></i>Nilai</a></li>
+            <li><a href="pages/spp/spp.html"><i class='bx bx-receipt'></i>SPP</a></li>
+            <!-- <li><a href="#"><i class='bx bx-cog'></i>Settings</a></li> -->
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="login.html" class="logout">
+                    <i class='bx bx-log-out-circle'></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <!-- <input type="checkbox" id="theme-toggle" hidden>
+            <label for="theme-toggle" class="theme-toggle"></label> -->
+            <!-- <a href="#" class="notif">
+                <i class='bx bx-bell'></i>
+                <span class="count">12</span>
+            </a> -->
+            <a href="#" class="profile">
+                <img src="assets/images/profile-3.jpg">
+            </a>
+        </nav>
+
+        <!-- End of Navbar -->
+
+        <main>
+            <div class="header">
+                <div class="left">
+                    <h1>Dashboard</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#">
+                                Analitik Keseluruhan
+                            </a></li>
+                        
+                        <!-- <li><a href="#" class="active">Shop</a></li> -->
+                    </ul>
+                </div>
+                <!-- <a href="#" class="report">
+                    <i class='bx bx-cloud-download'></i>
+                    <span>Download CSV</span>
+                </a> -->
+            </div>
+
+            <!-- Insights -->
+            <ul class="insights">
+                <li>
+                    <i class='bx bx-calendar-check'></i>
+                    <span class="info">
+                        <h3>
+                            274
+                        </h3>
+                        <p>Tugas (Selesai)</p>
+                    </span>
+                </li>
+                <li><i class='bx bx-group'></i>
+                    <span class="info">
+                        <h3>
+                            744
+                        </h3>
+                        <p>Jumlah Murid Baru</p>
+                    </span>
+                </li>
+                <li><i class='bx bx-line-chart'></i>
+                    <span class="info">
+                        <h3>
+                            Rp 16,897,000
+                        </h3>
+                        <p>Anggaran Masuk</p>
+                    </span>
+                </li>
+                <li><i class='bx bx-calendar-x'></i>
+                    <span class="info">
+                        <h3>
+                            42
+                        </h3>
+                        <p>Tugas (Tertunda)</p>
+                    </span>
+                </li>
+            </ul>
+            <!-- End of Insights -->
+
+            <div class="bottom-data">
+                <div class="orders">
+                    <div class="header">
+                        <i class='bx bx-receipt'></i>
+                        <h3>Status SPP Murid</h3>
+                        <a href="pages/spp/spp.html" class="btn-detail"><i class='bx bx-error-circle'></i>Detail</a>
+                    </div>
+                    <hr><br>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Murid</th>
+                                <th>Tanggal</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>Asep</p>
+                                </td>
+                                <td>14-08-2024</td>
+                                <td><span class="status completed">Selesai</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Tukimen</p>
+                                </td>
+                                <td>01-12-2024</td>
+                                <td><span class="status pending">Tertunda</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Nur</p>
+                                </td>
+                                <td>14-01-2025</td>
+                                <td><span class="status process">Pemrosesan</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Reminders -->
+                <div class="reminders">
+                    <div class="header">
+                        <i class='bx bx-note'></i>
+                        <h3>Catatan Pengingat</h3>
+                        <a href="#"><i class='bx bx-plus'></i></a>
+                    </div>
+                    <hr><br>
+                    <ul class="task-list">
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <p>Hadir Meeting</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <p>Mendata Absen Murid</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="not-completed">
+                            <div class="task-title">
+                                <i class='bx bx-x-circle'></i>
+                                <p>Mengisi Nilai Murid</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="not-completed">
+                            <div class="task-title">
+                                <i class='bx bx-x-circle'></i>
+                                <p>Merevisi Soal Ujian</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- End of Reminders-->
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

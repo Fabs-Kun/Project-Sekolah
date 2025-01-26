@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Project Sekolah</title>
+</head>
+<body>
+    <section class="header">
+        <section class="nav-header">
+            <nav class="nav container">
+                <div class="nav__data">
+                    <a href="index.html"><img src="../../assets/img/logo.png"></a>
+
+                    <div class="nav__toggle show-icon" id="nav-toggle">
+                        <i class='bx bx-menu nav__burger'></i>
+                        <i class='bx bx-x nav__close'></i>
+                    </div>              
+                </div>
+                <div class="nav__menu show-menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li><a href="index.html" class="nav__link">Beranda</a></li>
+
+                        <li class="dropdown__item">
+                            <div class="nav__link">
+                                Profil <i class='bx bx-chevron-down dropdown__arrow'></i>
+                            </div>
+
+                            <ul class="dropdown__menu">
+                                <li>
+                                    <a href="pages/profil/sejarah.html" class="dropdown__link">
+                                        <i class='bx bx-pie-chart-alt-2'></i> Sejarah  
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="pages/profil/visi_misi.html" class="dropdown__link">
+                                        <i class='bx bx-transfer'></i> Visi, Misi & Tujuan
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="pages/profil/guru_karyawan.html" class="dropdown__link">
+                                        <i class='bx bx-transfer'></i>  Guru & Karyawan
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="pages/profil/sarana_prasarana.html" class="dropdown__link">
+                                        <i class='bx bx-transfer'></i> Sarana & Prasarana
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="pages/profil/ekstrakurikuler.html" class="dropdown__link">
+                                        <i class='bx bx-transfer'></i> Ekstrakurikuler
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown__item">
+                            <div class="nav__link">
+                                Kurikulum <i class='bx bx-chevron-down dropdown__arrow'></i>
+                            </div>
+
+                            <ul class="dropdown__menu">
+                                <li>
+                                    <a href="pages/kurikulum/materi.html" class="dropdown__link">
+                                        <i class='bx bx-transfer'></i> Materi Pembelajaran
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="pages/kurikulum/jadwal.html" class="dropdown__link">
+                                        <i class='bx bx-transfer'></i> Jadwal Pembelajaran
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="pages/kurikulum/program_kegiatan.html" class="dropdown__link">
+                                        <i class='bx bx-transfer'></i> Program Kegiatan
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li class="dropdown__item">
+                            <div class="nav__link">
+                                Galeri <i class='bx bx-chevron-down dropdown__arrow'></i>
+                            </div>
+
+                            <ul class="dropdown__menu">
+                                <li>
+                                    <a href="pages/galeri/foto.html" class="dropdown__link">
+                                        <i class='bx bxs-user'></i> Foto
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="pages/galeri/vidio.html" class="dropdown__link">
+                                        <i class='bx bx-lock'></i> Vidio
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown__item">
+                            <div class="nav__link">
+                                Informasi <i class='bx bx-chevron-down dropdown__arrow'></i>
+                            </div>
+
+                            <ul class="dropdown__menu">
+                                <li>
+                                    <a href="pages/informasi/kegiatan_sekolah.html" class="dropdown__link">
+                                        <i class='bx bxs-user'></i> Kegiatan Sekolah
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="pages/informasi/informasi_sekolah.html" class="dropdown__link">
+                                        <i class='bx bx-lock'></i> Sekolah
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="pages/informasi/keuangan.html" class="dropdown__link">
+                                        <i class='bx bx-lock'></i> Keuangan
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown__item">
+                            <div class="nav__link">
+                                Kontak <i class='bx bx-chevron-down dropdown__arrow'></i>
+                            </div>
+
+                            <ul class="dropdown__menu">
+                                <li>
+                                    <a href="#" class="dropdown__link">
+                                        <i class='bx bxs-user'></i> 081234567890
+                                    </a>
+                                    <a href="#" class="dropdown__link">
+                                        <i class='bx bxs-user'></i> eduford@gmail.com
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- <li><a href="#" class="nav__link">Contact</a></li> -->
+                    </ul>   
+                </div>
+            </nav>
+        </section>    
+
+        <!-- Image Slider -->
+        <br><br><br><br><br>
+        <div class="container">
+            <div class="slider">
+                <div class="slides">
+                    <!-- Radio Button Start -->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <!-- Radio Button End -->
+                    <!-- Slide Image Start -->
+                    <div class="slide first">
+                        <img src="../../assets/img/cafeteria.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="../../assets/img/library.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="../../assets/img/basketball.png" alt="">
+                    </div>
+                    <!-- Slide Image End -->
+                    <!-- Auto Navigation Start -->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+                    <!-- Auto Navigation End -->
+                </div>
+                <!-- Manual Navigation Start -->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+                <!-- Manual Navigation End -->
+            </div>
+        </div>
+
+        <!-- Image Slider End -->
+
+        <div class="text-box">
+            <h1>Lorem Ipsum (Nama Sekolah)</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate in libero vitae mollis. Phasellus non eros tellus. Suspendisse at urna vitae dui commodo hendrerit. Morbi eu elementum nibh, nec blandit turpis.</p>
+            <a href="#" class="hero-btn">Kunjungi Kami</a> 
+        </div>
+    </section>
+
+    <!-- Course -->
+     <section class="course">
+        <h1>Lorem Ipsum</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate in libero vitae mollis. Phasellus non eros tellus. Suspendisse at urna vitae dui commodo hendrerit. Morbi eu elementum nibh, nec blandit turpis.</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate in libero vitae mollis. Phasellus non eros tellus. Suspendisse at urna vitae dui commodo hendrerit. Morbi eu elementum nibh, nec blandit turpis.</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate in libero vitae mollis. Phasellus non eros tellus. Suspendisse at urna vitae dui commodo hendrerit. Morbi eu elementum nibh, nec blandit turpis.</p>
+            </div>
+        </div>
+     </section>
+
+     <!-- Campus -->
+
+     <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="../../assets/img/london.png">
+                <div class="layer">
+                    <h3>Lorem</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="../../assets/img/newyork.png">
+                <div class="layer">
+                    <h3>Lorem</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="../../assets/img/washington.png">
+                <div class="layer">
+                    <h3>Lorem</h3>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- Facilities -->
+
+     <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <div class="row">
+            <div class="facilities-col">
+                <img src="../../assets/img/library.png">
+                <h3>Lorem Ipsum</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate in libero vitae mollis.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="../../assets/img/basketball.png">
+                <h3>Lorem Ipsum</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate in libero vitae mollis.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="../../assets/img/cafeteria.png">
+                <h3>Lorem Ipsum</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate in libero vitae mollis.</p>
+            </div>
+        </div>
+     </section>
+
+     <!-- Testimonials -->
+
+     <section class="testimonials">
+        <h1>Lorem Ipsum</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <div class="row">
+            <div class="testimonials-col">
+                <img src="../../assets/img/user2.jpg">
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate in libero vitae mollis. Phasellus non eros tellus. Suspendisse at urna vitae dui commodo hendrerit. Morbi eu elementum nibh, nec blandit turpis.</p>
+                    <h3>Tukimen</h3>
+                    <i class='bx bxs-star' style="color: black;"></i>
+                    <i class='bx bxs-star' style="color: black;"></i>
+                    <i class='bx bxs-star' style="color: black;"></i>
+                    <i class='bx bxs-star' style="color: black;"></i>
+                    <i class='bx bx-star' style="color: black;"></i>
+                </div>
+            </div>
+            <div class="testimonials-col">
+                <img src="../../assets/img/user1.jpg">
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate in libero vitae mollis. Phasellus non eros tellus. Suspendisse at urna vitae dui commodo hendrerit. Morbi eu elementum nibh, nec blandit turpis.</p>
+                    <h3>Tukiyem</h3>
+                    <i class='bx bxs-star' style="color: black;"></i>
+                    <i class='bx bxs-star' style="color: black;"></i>
+                    <i class='bx bxs-star' style="color: black;"></i>
+                    <i class='bx bxs-star' style="color: black;"></i>
+                    <i class='bx bxs-star-half' style="color: black;"></i>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- Call To Action -->
+
+     <section class="cta">
+        <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Ut vulputate in libero vitae mollis.</h1>
+        <a href="#" class="hero-btn">CONTACT US</a>
+     </section>
+
+     <!-- Footer -->
+
+     <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate in libero vitae mollis. Phasellus non eros tellus. Suspendisse at urna vitae dui commodo hendrerit. <br> Morbi eu elementum nibh, nec blandit turpis.</p>
+        <div class="icons">
+            <i class='bx bxl-facebook icon'></i>
+            <i class='bx bxl-twitter icon'></i>
+            <i class='bx bxl-instagram icon'></i>
+            <i class='bx bxl-linkedin icon'></i>
+        </div>
+        <p>Copyright © Lorem Ipsum</p>
+    </section>
+
+    <!-- Javascript Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <script src="../../assets/js/slider.js"></script>
+    <script src="../assets/js/index.js"></script>
+</body>
+</html> 
