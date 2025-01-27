@@ -326,6 +326,7 @@ nav img{
     }
 
     .nav__list{
+        margin-right: 70px;
         height: 100%;
         display: flex;
         column-gap: 3rem;
@@ -1242,8 +1243,9 @@ p{
 }
 
 .program_kegiatan-col{ 
-    margin-left: 35%; 
-    flex-basis: 31%;
+    margin-left: 20%;
+    height: 275px;
+    flex-basis: 60%;
     background: var(--color-orange);
     border-radius: 10px;
     margin-bottom: 5%;
@@ -1494,17 +1496,7 @@ p{
     transition: all ease 300ms;
 }
 
-.num-btn{
-    display: inline-block;
-    text-decoration: none;
-    color: var(--color-dark);
-    border: 1px solid var(--color-dark);
-    padding: 10px 15px;
-    font-size: 13px;
-    background: var(--color-white);
-    position: relative;
-    cursor: pointer;
-}
+.num-btn,
 .next-btn{
     display: inline-block;
     text-decoration: none;
@@ -1517,13 +1509,7 @@ p{
     cursor: pointer;
 }
 
-.num-btn:hover{
-    color: var(--color-white);
-    border: 1px solid var(--color-dark);
-    background: var(--color-dark);
-    transition: all ease 300ms;
-}
-
+.num-btn:hover,
 .next-btn:hover{
     color: var(--color-white);
     border: 1px solid var(--color-dark);
@@ -1628,17 +1614,7 @@ p{
     transition: all ease 300ms;
 }
 
-.num-btn{
-    display: inline-block;
-    text-decoration: none;
-    color: var(--color-dark);
-    border: 1px solid var(--color-dark);
-    padding: 10px 15px;
-    font-size: 13px;
-    background: var(--color-white);
-    position: relative;
-    cursor: pointer;
-}
+.num-btn,
 .next-btn{
     display: inline-block;
     text-decoration: none;
@@ -1651,13 +1627,7 @@ p{
     cursor: pointer;
 }
 
-.num-btn:hover{
-    color: var(--color-white);
-    border: 1px solid var(--color-dark);
-    background: var(--color-dark);
-    transition: all ease 300ms;
-}
-
+.num-btn:hover,
 .next-btn:hover{
     color: var(--color-white);
     border: 1px solid var(--color-dark);
@@ -1760,29 +1730,6 @@ p{
     border: 1px solid var(--color-dark);
     background: var(--color-dark);
     transition: all ease 300ms;
-}
-
-.num-btn{
-    display: inline-block;
-    text-decoration: none;
-    color: var(--color-dark);
-    border: 1px solid var(--color-dark);
-    padding: 10px 15px;
-    font-size: 13px;
-    background: var(--color-white);
-    position: relative;
-    cursor: pointer;
-}
-.next-btn{
-    display: inline-block;
-    text-decoration: none;
-    color: var(--color-dark);
-    border: 1px solid var(--color-dark);
-    padding: 10px 15px;
-    font-size: 13px;
-    background: var(--color-white);
-    position: relative;
-    cursor: pointer;
 }
 
 .num-btn:hover{
