@@ -46,6 +46,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body::-webkit-scrollbar{
+    display: none;
+}
+
 .header{
     min-height: 120vh;
     width: 100%;
@@ -225,6 +229,37 @@ nav img{
 .nav__link:hover{
     background-color: var(--black-color-light);
 }
+
+/* .nav__link.log{
+    -webkit-appearance: none;
+    appearance: none;
+    height: 120px;
+    border-right: 40px solid #454b41;
+    border-bottom: 40px solid transparent;
+    position: relative;
+    left: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+.nav__link.log:before{
+    content: "";
+    position: absolute;
+    left: -39.5px;
+    height: 120px;
+    border-left: 40px solid #454b41;
+    border-bottom: 40px solid transparent;
+}
+
+.nav__link.log:hover{
+    border-right-color: #2b8ced;
+    transition: 0.1s 0.3s border;
+}
+
+.nav__link.log:hover:before{
+    border-left-color: #2b8ced;
+    transition: 0.1s 0.3s border;
+} */
 
 .show-menu{
     opacity: 1;
