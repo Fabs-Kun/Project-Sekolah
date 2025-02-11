@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../../../assets/css/style2.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#" class="logo">
+            <i class='bx bx-code-alt'></i>
+            <div class="logo-name"><span>Lorem</span>Ipsum</div>
+        </a>
+        <ul class="side-menu">
+            <li><a href="../../../index2.html"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
+            <li><a href="../foto/foto.html"><i class='bx bx-camera'></i>Foto</a></li>
+            <li class="active"><a href="vidio.html"><i class='bx bx-camera-movie'></i>Vidio</a></li>
+            <li><a href="../../informasi/kegiatan/kegiatan.html"><i class='bx bx-list-ul'></i></i>Kegiatan</a></li>
+            <li><a href="../../informasi/berita_utama/berita_utama.html"><i class='bx bxs-news'></i></i>Sekolah</a></li>
+            <!-- <li><a href="#"><i class='bx bx-cog'></i>Settings</a></li> -->
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="#" class="logout">
+                    <i class='bx bx-log-out-circle'></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <!-- <input type="checkbox" id="theme-toggle" hidden>
+            <label for="theme-toggle" class="theme-toggle"></label> -->
+            <!-- <a href="#" class="notif">
+                <i class='bx bx-bell'></i>
+                <span class="count">12</span>
+            </a> -->
+            <a href="#" class="profile">
+                <img src="../../../assets/images/profile-3.jpg">
+            </a>
+        </nav>
+
+        <!-- End of Navbar -->
+
+        <main>
+
+            <div class="bottom-data">
+                <!-- Order -->
+                <div class="orders">
+                    <div class="header">
+                        <i class='bx bx-receipt'></i>
+                        <h3>Penambahan Data Vidio</h3>
+                        <a href="vidio.html" class="btn-close"><i class='bx bx-arrow-back'></i></a>
+                    </div>
+                    <div class="wrapper">
+                        <form action="#">
+                            <h1>Input Data</h1><hr>
+                            <div class="input-box">
+                                <input type="text" placeholder="Nama Vidio" required>
+                                <i class='bx bx-camera-movie'></i>
+                            </div>
+                            <div class="input-box">
+                                <input type="text" placeholder="Directory" required>
+                                <i class='bx bx-file-blank'></i>
+                            </div>
+                            <div class="input-box">
+                                <input type="text" placeholder="Keterangan" required>
+                                <i class='bx bx-receipt'></i>
+                            </div>
+                
+                            <button type="submit" class="btn">Tambah Data</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- End of Order-->
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="../../../assets/js/index.js"></script>
+</body>
+
+</html>

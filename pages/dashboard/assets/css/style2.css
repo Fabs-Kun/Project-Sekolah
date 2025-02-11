@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-    --light: #f6f6f9;
+    --light: #181a1e; /*--light: #181a1e;*/
     --primary: #1976D2;
     --light-primary: #CFE8FF;
-    --grey: #eee;
+    --grey: #25252c; /*--grey: #25252c;*/
     --dark-grey: #AAAAAA;
-    --dark: #363949;
+    --dark: #fbfbfb; /*--dark: #fbfbfb;*/
     --danger: #D32F2F;
     --orange: #ff2600;
 	--light-danger: #FECDD3;
@@ -40,9 +40,9 @@ html{
 }
 
 body.dark{
-    --light: #181a1e;
-    --grey: #25252c;
-    --dark: #fbfbfb;
+    --light: #f6f6f9; /*--light: #f6f6f9;*/
+    --grey: #eee; /*--grey: #eee;*/
+    --dark: #363949; /*--dark: #363949;*/
 }
 
 body{
@@ -454,13 +454,14 @@ body::-webkit-scrollbar{
     font-weight: 600;
 }
 
+
 .wrapper{
     width: 100%;
-    background: transparent;
+    background: #f6f6f9;
     border: 2px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    color: var(--dark);
+    color: var(--light);
     border-radius: 10px;
     padding: 30px 40px;
 }
@@ -490,12 +491,12 @@ body::-webkit-scrollbar{
     border: 2px solid rgba(27, 21, 21, 0.2);
     border-radius: 40px;
     font-size: 16px;
-    color: var(--dark);
+    color: var(--light);
     padding: 20px 45px 20px 20px;
 }
 
 .input-box input::placeholder{
-    color: var(--dark);
+    color: var(--light);
 
 }
 
@@ -515,12 +516,12 @@ body::-webkit-scrollbar{
 }
 
 .remember-forgot label input{
-    accent-color: var(--dark);
+    accent-color: var(--light);
     margin-right: 3px;
 }
 
 .remember-forgot a{
-    color: var(--dark);
+    color: var(--light);
     text-decoration: none;
 }
 
@@ -555,7 +556,7 @@ body::-webkit-scrollbar{
 }
 
 .register-link p a{
-    color: var(--dark);
+    color: var(--light);
     text-decoration: none;
     font-weight: 600;
 }
@@ -563,6 +564,66 @@ body::-webkit-scrollbar{
 .register-link p a:hover{
     text-decoration: underline;
 }
+
+.row{
+    /* margin-top: 5%; */
+    display: flex;
+    justify-content: center;
+}
+
+.foto-col,
+.vidio-col,
+.kegiatan-col,
+.berita-col{
+    flex-basis: 100%;
+    background: var(--light);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    border: var(--dark);
+    transition: all ease 300ms;
+}
+
+.foto-col .camera,
+.vidio-col .vidio,
+.kegiatan-col .camera,
+.berita-col .camera{
+    margin-left: 256px;
+    width: 400px;
+    height: 200px;
+    color: var(--dark);
+    border-radius: 10px;
+    border-style: dashed;
+    font-size: 36px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto-col hr,
+.vidio-col hr,
+.kegiatan-col hr,
+.berita-col hr{
+    margin-bottom: 20px;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+p{
+    text-align: center;
+}
+
+.foto-col:hover,
+.vidio-col:hover,
+.kegiatan-col:hover,
+.berita-col:hover{
+    box-shadow: 0 0 20px 0px rgba(255, 255, 255, 0.2);
+}   
 
 .content main .bottom-data .orders form h5{
     margin-right: auto;
@@ -588,11 +649,11 @@ body::-webkit-scrollbar{
 }
 
 .content main .bottom-data .orders form .status.process{
-    background: var(--primary);
+    background: var(--warning);
 }
 
 .content main .bottom-data .orders form .status.pending{
-    background: var(--warning);
+    background: var(--danger);
 }
 
 .content main .bottom-data .header a.btn-detail{
@@ -717,11 +778,11 @@ body::-webkit-scrollbar{
 }
 
 .content main .bottom-data .orders table tr td .status.process{
-    background: var(--primary);
+    background: var(--warning);
 }
 
 .content main .bottom-data .orders table tr td .status.pending{
-    background: var(--warning);
+    background: var(--danger);
 }
 
 .content main .bottom-data .reminders{
